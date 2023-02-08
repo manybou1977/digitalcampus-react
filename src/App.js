@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Voiture from './Composants/Voiture.jsx';
+import Appart from './Composants/Appart';
+import Person from './Composants/Person';
+import Players from './Composants/Players';
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ul>
+          <li>
+            <Voiture/>
+          </li>  
+          <li>
+            <Appart/>
+          </li>  
+          <li>
+            <Person/>
+          </li> 
+          <li>
+            <Players/>
+          </li>  
+      </ul> 
     </div>
-  );
+  )
 }
 
 export default App;
+
